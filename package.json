@@ -5,10 +5,12 @@
   "main": "main.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "electron": "electron ."
+    "electron": "electron .",
+    "dev": "concurrently \"yarn start\" \"yarn electron\""
   },
   "author": "Rallycoding",
   "devDependencies": {
+    "concurrently": "^4.1.0",
     "electron": "~1.6.2",
     "prettier": "^1.17.0"
   },
